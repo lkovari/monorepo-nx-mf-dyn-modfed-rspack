@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { Layout } from './shared/components/layout/layout';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [Layout],
   selector: 'nxmfdf-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
