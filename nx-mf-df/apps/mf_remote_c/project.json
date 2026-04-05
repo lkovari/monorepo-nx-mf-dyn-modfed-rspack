@@ -1,0 +1,33 @@
+{
+  "name": "mf_remote_c",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "nxmfdf",
+  "sourceRoot": "apps/mf_remote_c/src",
+  "tags": [],
+  "targets": {
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "mf_remote_c:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "mf_remote_c:build",
+        "port": 4203,
+        "spa": true
+      }
+    },
+    "serve": {
+      "options": {
+        "port": 4203
+      }
+    }
+  }
+}

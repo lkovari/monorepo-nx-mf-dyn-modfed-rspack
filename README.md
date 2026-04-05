@@ -13,3 +13,7 @@ monorepo-nx-mf-dyn-modfed with rspack
   --port=4200 \
   --standalone \
   --routing
+5. pnpm exec nx g @nx/angular:application apps/mf_remote_a --prefix=nxmfdf --bundler=rspack --port=4201 --standalone --routing --style=css --unitTestRunner=vitest-analog --e2eTestRunner=playwright --interactive=false
+6. pnpm exec nx g @nx/angular:application apps/mf_remote_b --prefix=nxmfdf --bundler=rspack --port=4202 --standalone --routing --style=css --unitTestRunner=vitest-analog --e2eTestRunner=playwright --interactive=false
+7. pnpm exec nx g @nx/angular:application apps/mf_remote_c --prefix=nxmfdf --bundler=rspack --port=4203 --standalone --routing --style=css --unitTestRunner=vitest-analog --e2eTestRunner=playwright --interactive=false
+8. 
