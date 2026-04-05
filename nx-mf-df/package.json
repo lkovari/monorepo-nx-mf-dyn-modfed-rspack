@@ -2,7 +2,14 @@
   "name": "@nx-mf-df/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:main-host": "nx run main-host:build",
+    "build:mf_remote_a": "nx run mf_remote_a:build",
+    "build:mf_remote_b": "nx run mf_remote_b:build",
+    "build:mf_remote_c": "nx run mf_remote_c:build",
+    "build:common-ui-lib": "nx run common-ui-lib:build",
+    "build:all": "nx run-many -t build --all"
+  },
   "private": true,
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "~2.1.2",
