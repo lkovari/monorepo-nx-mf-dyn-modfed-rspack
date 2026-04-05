@@ -33,3 +33,4 @@ monorepo-nx-mf-dyn-modfed with rspack
 16. npx nx generate @nx/angular:component --path=apps/main-host/src/app/shared/components/layout/layout --standalone
 17. Implement header, main, footer, layout logic
 , delete nx-welcome, tight in the Layout into app component
+18. Install Tailwind, add serve scripts
