@@ -8,7 +8,11 @@
     "build:mf_remote_b": "nx run mf_remote_b:build",
     "build:mf_remote_c": "nx run mf_remote_c:build",
     "build:common-ui-lib": "nx run common-ui-lib:build",
-    "build:all": "nx run-many -t build --all"
+    "build:all": "NX_MF_PARALLEL_LOG=1 nx run-many -t build --all",
+    "serve:main-host": "nx run main-host:serve",
+    "serve:mf_remote_a": "nx run mf_remote_a:serve",
+    "serve:mf_remote_b": "nx run mf_remote_b:serve",
+    "serve:mf_remote_c": "nx run mf_remote_c:serve"
   },
   "private": true,
   "devDependencies": {
@@ -28,6 +32,7 @@
     "@nx/eslint": "22.6.4",
     "@nx/eslint-plugin": "22.6.4",
     "@nx/js": "22.6.4",
+    "@nx/module-federation": "22.6.4",
     "@nx/playwright": "22.6.4",
     "@nx/rspack": "22.6.4",
     "@nx/vite": "22.6.4",
@@ -43,6 +48,7 @@
     "@swc-node/register": "~1.11.1",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
+    "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "20.19.9",
     "@typescript-eslint/utils": "^8.40.0",
     "@vitest/coverage-v8": "~4.1.0",
@@ -58,6 +64,7 @@
     "nx": "22.6.4",
     "postcss": "^8.4.5",
     "prettier": "~3.6.2",
+    "tailwindcss": "^4.2.2",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
@@ -73,6 +80,7 @@
     "@angular/forms": "~21.2.0",
     "@angular/platform-browser": "~21.2.0",
     "@angular/router": "~21.2.0",
+    "@module-federation/enhanced": "2.3.1",
     "rxjs": "~7.8.0"
   }
 }
